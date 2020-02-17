@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="1.htm">
+
+        <label for="opacity">Images Opacity</label><br />
+        <input type="range" min="0" max="1" step="0.01" oninput="Opacity()" value="1" id="opacity" /> <br />
+
+        <label for="radius">Border Radius</label><br />
+        <input type="range" min="0" max="50" step="1" oninput="Radius()" value="0" id="radius" />   <br />
+      
+
+        <label for="br"> Menu Position</label><br />
+        <input type="radio" name="position" onclick="Position('left')"  checked="checked" id="bir" value="left"/>Left
+        <input type="radio"  name="position" onclick="Position('right')"  id="iki" value="right"/>Right
+
+    </form>
+
+    <script src="1.js"></script>
+</body>
+</html>
