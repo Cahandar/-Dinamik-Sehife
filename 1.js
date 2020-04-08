@@ -12,23 +12,28 @@ function Radius() {
     localStorage.setItem("textvalue", rad);
 
 }
-
+/*
 document.getElementById("bir").style.borderRadius= localStorage.getItem("textvalue")+"%";
 document.getElementById("iki").style.borderRadius= localStorage.getItem("textvalue")+"%";
-document.getElementById("uc").style.borderRadius= localStorage.getItem("textvalue")+"%";
-document.getElementById("dord").style.borderRadius= localStorage.getItem("textvalue")+"%";
+document.getElementById("uc").style.borderRadius= localStorage.getItem("textvalue")+"%";z
+document.getElementById("dord").style.borderRadius= localStorage.getItem("textvalue")+"%";*/
 
-function Position(n){
-    switch(n){
+for (let i = 0; i <= 3; i++) {
+
+    document.getElementsByClassName("bir")[i].style.borderRadius = localStorage.getItem("textvalue") + "%";
+}
+
+function Position(n) {
+    switch (n) {
         case "left":
             let c = "start";
             localStorage.setItem("acar3", c);
-        break;
+            break;
         case "right":
-            let d ="2"; 
+            let d = "2";
             localStorage.setItem("acar3", d);
-        break;
+            break;
     }
 }
 
-document.getElementById("nav").style.order= localStorage.getItem("acar3");
+document.getElementById("nav").style.order = localStorage.getItem("acar3");
